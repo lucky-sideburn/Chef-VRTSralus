@@ -12,20 +12,20 @@ Centos/RHEL 5, 6
 
 For integration with Cgroups cookbook put this stuff on attributes :
 
-default['cgroups']['controllers'] = [ "memory" ]
-default['cgroups']['group_name'] =  "VRTSralus"
+ default['cgroups']['controllers'] = [ "memory" ]
+ default['cgroups']['group_name'] =  "VRTSralus"
 
-default['cgroups']['parameters'] = [              "memory.limit_in_bytes = 256M",
+ default['cgroups']['parameters'] = [              "memory.limit_in_bytes = 256M",
                                                   "memory.memsw.limit_in_bytes = 256M"
                                                                                                 ]
 
-default['cgroups']['task-uid'] =  "root"
-default['cgroups']['task-gid'] =  "root"
-default['cgroups']['admin-uid'] = "root"
-default['cgroups']['admin-gid'] = "root"
-default['cgroups']['users'] = [ "root" ]
-default['cgroups']['command'] = "/opt/VRTSralus/bin/beremote"
-default['cgroups']['service'] = "VRTSralus.init"
+ default['cgroups']['task-uid'] =  "root"
+ default['cgroups']['task-gid'] =  "root"
+ default['cgroups']['admin-uid'] = "root"
+ default['cgroups']['admin-gid'] = "root"
+ default['cgroups']['users'] = [ "root" ]
+ default['cgroups']['command'] = "/opt/VRTSralus/bin/beremote"
+ default['cgroups']['service'] = "VRTSralus.init"
 
 = USAGE:
 
