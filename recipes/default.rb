@@ -6,7 +6,6 @@
 #
 # Apache 2.0
 
-include_recipe "yumrepo::corporate"
 
 media_servers = node['vrtsralus']['media_servers']
 
